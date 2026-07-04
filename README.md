@@ -25,6 +25,7 @@ An e-wallet application built using a microservice architecture to provide scala
 * Validator
 * SMTP
 * PostgreSQL
+* gRPC
 
 ### Infrastructure & DevOps
 

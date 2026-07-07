@@ -10,7 +10,7 @@ An e-wallet application built using a microservice architecture to provide scala
 * **Wallet Service**
   Repository: [Wallet Service Repository](https://github.com/reganputra/ewallet-wallet-service.git?utm_source=chatgpt.com)
 
-* **Transaction Service** *(Work in Progress)*
+* **Transaction Service**
   Repository: [Transaction Service Repository](https://github.com/reganputra/e-wallet-transaction-service.git?utm_source=chatgpt.com)
 
 * **Email Service** *(TBD)*

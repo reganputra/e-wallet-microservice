@@ -5,15 +5,16 @@ An e-wallet application built using a microservice architecture to provide scala
 ## Services
 
 * **User Management Service**
-  Repository: [User Management Service Repository](https://github.com/reganputra/ewallet-ums-service.git?utm_source=chatgpt.com)
+  Repository: [User Management Service Repository](https://github.com/reganputra/ewallet-ums-service.git)
 
 * **Wallet Service**
-  Repository: [Wallet Service Repository](https://github.com/reganputra/ewallet-wallet-service.git?utm_source=chatgpt.com)
+  Repository: [Wallet Service Repository](https://github.com/reganputra/ewallet-wallet-service.git)
 
 * **Transaction Service**
-  Repository: [Transaction Service Repository](https://github.com/reganputra/e-wallet-transaction-service.git?utm_source=chatgpt.com)
+  Repository: [Transaction Service Repository](https://github.com/reganputra/e-wallet-transaction-service.git)
 
-* **Email Service** *(TBD)*
+* **Email Notification Service**
+  Repository: [Email Notification Service Repository](https://github.com/reganputra/e-wallet-notification-service.git)
 
 ## Tech Stack
 

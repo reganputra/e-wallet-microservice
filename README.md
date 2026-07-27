@@ -21,7 +21,7 @@ An e-wallet application built using a microservice architecture to provide scala
 ### Backend
 
 * Go
-* Fiber
+* Gin
 * GORM
 * Validator
 * SMTP

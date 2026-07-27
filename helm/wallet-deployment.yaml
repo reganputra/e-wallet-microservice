@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wallet-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: wallet-service
+  template:
+    metadata:
+      labels:
+        app: wallet-service
+    spec:
+      containers:
+        - name: wallet-service
+          image: reganputra/e-wallet-wallet-service:1.0
+          ports:
+            - containerPort: 8081 # HTTP
+            - containerPort: 7001 # gRPC
+          env:
+            - name: APP_NAME
+              value: "ewallet-wallet-service"
+            - name: PORT
+              value: "8081"
+            - name: GRPC_PORT
+              value: "7001"
+            - name: DB_HOST
+              value: "wallet-mysql"
+            - name: DB_PORT
+              value: "3306"
+            - name: DB_NAME
+              value: "wallet-service-db"
+            - name: DB_USER
+              value: "root"
+            - name: DB_PASSWORD
+              value: "rootpassword"
+            - name: UMS_GRPC_HOST
+              value: "ums:7000"

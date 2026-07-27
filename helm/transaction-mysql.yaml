@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: transaction-mysql
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: transaction-mysql
+  template:
+    metadata:
+      labels:
+        app: transaction-mysql
+    spec:
+      containers:
+        - name: mysql
+          image: mysql:latest
+          ports:
+            - containerPort: 3306
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              value: "rootpassword"
+            - name: MYSQL_DATABASE
+              value: "transaction-service-db"
+          volumeMounts:
+            - name: mysql-data
+              mountPath: /var/lib/mysql
+      volumes:
+        - name: mysql-data
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: transaction-mysql
+spec:
+  selector:
+    app: transaction-mysql
+  ports:
+    - port: 3306
+      targetPort: 3306

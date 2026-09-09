@@ -10,10 +10,10 @@ An e-wallet application built using a microservice architecture to provide scala
 * **Wallet Service**
   Repository: [Wallet Service Repository](https://github.com/reganputra/ewallet-wallet-service.git)
 
-* **Transaction Service**
+* **Transaction Service (TBD)**
   Repository: [Transaction Service Repository](https://github.com/reganputra/e-wallet-transaction-service.git)
 
-* **Email Notification Service**
+* **Email Notification Service (TBD)**
   Repository: [Email Notification Service Repository](https://github.com/reganputra/e-wallet-notification-service.git)
 
 ## Tech Stack
